@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9060"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailHeaderView">
+            <connections>
+                <outlet property="bannerBgView" destination="J4Y-ub-3rz" id="eLr-Sz-SY0"/>
+                <outlet property="bannerViewHeightConstraint" destination="9k2-fv-5kG" id="VEl-Q3-Hsf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="j9B-8X-rUe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J4Y-ub-3rz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="9k2-fv-5kG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="J4Y-ub-3rz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QT9-nx-1UZ"/>
+                <constraint firstAttribute="trailing" secondItem="J4Y-ub-3rz" secondAttribute="trailing" id="hr5-Kl-pvG"/>
+                <constraint firstAttribute="bottom" secondItem="J4Y-ub-3rz" secondAttribute="bottom" id="rcl-ke-f1o"/>
+                <constraint firstItem="J4Y-ub-3rz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wuF-jv-PbD"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="636" y="405"/>
+        </view>
+    </objects>
+</document>
