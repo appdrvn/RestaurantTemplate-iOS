@@ -16,3 +16,79 @@ The main objective of this template is to assist startups to buy their mobile ap
 ## CocoaPods
 1. CocoaPods is build with Ruby and is installable with the default Ruby available on OS X. Default Ruby is recommended.
 2. If your Mac do not install Ruby and CocoaPods yet, please refer to here https://cocoapods.org/ or https://guides.cocoapods.org/using/getting-started.html#getting-started. From the link, there have latest document to guide how to install the Ruby and CocoaPods.
+
+## Implementation of GoogleMap SDK
+1. You may use CocoaPods to install GoogleMaps SDK:
+    a.bCreate a podfile
+    b. And open by TextEdit and paste this
+        platform :ios, ‘9.0’
+
+        target 'RestaurantsNearBy' do
+        pod 'GoogleMaps'
+        end
+    c. Open Terminal and run pod install from the project directory.
+
+# What is inside
+## Model Classes
+### RestaurantModel.h
+This model class is for the restaurant. It is the main object in this template.
+
+### MenuModel.h
+This model class is for the menu of the Restaurant object.
+
+### AddressModel.h
+This model class is for the address of the Restaurant object.
+
+### CoordinateModel.h 
+This model class is for the coordinate of the Restaurant object.
+
+## Core Classes
+### AppConstants.h
+This class used to define some important GLOBAL CONSTANT for the others classes needed which are:
+1. DEFAULT_TAKE
+    a. This used for pagination feature while pulling the number of data from Web API.
+2. BANNER_VIEW_HEIGHT
+  a. This is the ratio of all the banners image to fit all the devices with different resolution sizes.
+3. appthemeColor
+4. shadowColor
+
+### GeneralHelper.h & .m
+This class used to define some GLOBAL methods which able to call by the other classes which are:
+1. + (NSString *)suffixNumber:(NSNumber *)number;
+    a. This method used to format the number, e.g. 1000 to 1k, 1500 to 1.5k
+2. + (void) navigateToLatitude:(double)latitude longitude:(double)longitude;
+    a. This method used to open Waze with passing certain coordinate.
+3. + (void) navigateToGoogleMapWithLatitude:(double)latitude longitude:(double)longitude;
+    a. This method used to open GoogleMap with passing the certain coordainate.
+4. + (void) openBrowserInUrl:(NSString *)urlString;
+    a. This method contains the default opening Safari browser with the url
+5. + (void)showAlertMsg:(NSString *)msg;
+    a. This method contains the UIAlertView to display the alert message.
+
+### BaseViewController.h & .m
+This is the superclass for all the UIViewController classes to inherit. And also able to create some methods are calling by the certain UIViewController.
+
+### BaseTableViewController.h & .m
+This is the superclass of all the UIViewController classes which contain UITableView and integrated the Pull To Refresh and Load More features.
+
+### BaseCollectionViewController.h & .m
+This is the superclass of all the UIViewController classes which contain UICollectionView and integrated the Pull To Refresh and Load More features.
+
+## ViewController Classes
+There are some important ViewController classes which used to integrate with Web API:
+### ListPageViewController.h & .m
+First of all, remove all the dummy data from -(void)loadData method before integrating Web API. While integrating Web API, remember to pass DEFAULT_TAKE to pull the number of data. If want to get nearby restaurant data, you may pass the current location to the API and do the filtering by the API.
+
+### MapPageViewController.h & .m
+First of all, remove all the dummy data before integrating Web API. Currently this class has integrated the CLLocationManager to get current location and displaying in GoogleMap. 
+At the same time, you should integrate Web API into - (void) loadDataWithLatitude:(double)latitude longitude:(double)longitude with the coordinate to pull the data.
+
+### DetailPageViewController.h & .m
+First of all, you have to remove all the dummy data before integrating Web API. The data displaying in 2 different parts which are UITableViewHeaderView and UITableViewCell. You should integrate Web API into -(void)loadData with DEFAULT_TAKE to pull the number of data. You may set the TableHeaderView while pulling to refresh,  self.currentPage will reset back to 1. 
+
+# Useful Links
+1. Appdrvn official website - http://www.appdrvn.com/ 
+2. Appdrvn official facebook page - https://www.facebook.com/Appdrvn/ 
+3. Appdrvn email address - hello@appdrvn.com 
+
+
