@@ -1,21 +1,7 @@
 # Introduction
 Restaurant Directory App Template is based on a restaurant directory app. The app consists of list view, and also map view. List view display the restaurant list in grid format, while map view has the concept of showing the restaurants in an area based on the center of the map. Other than the list and map view, this template consists of details page as well, displaying the restaurant details, and also the menu that are available in this restaurant.
 
-The main objective of this template is to assist startups to buy their mobile application faster and easier. 
-
-# Tools and Libraries used
-Name | Description | URL
----- | ----------- | --
-LCBannerView | LCBannerView is a library which used to display the images with automatic scrolling animation. | https://github.com/iTofu/LCBannerView
-MBProgressHUD | MBProgressHUB is a library which is a very simple and nice loading indicator. | https://github.com/jdg/MBProgressHUD
-MSPullToRefreshController | MSPullToRefreshController is a library which use for calling the data with the pull to refresh indicator effect. | https://github.com/bogardon/MSPullToRefreshController
-MWPhotoBrowser | MWPhotoBrowser is a library which display images and able to zoom in/out. | https://github.com/mwaterfall/MWPhotoBrowser
-DACircularProgress | DACircularProgress is a loading indicator library and use in MWPhotoBrowser library. | https://github.com/danielamitay/DACircularProgress
-MZFormSheetPresentationController | MZFormSheetPresentationController provides an alternative to the native iOS UIModalPresentationFormSheet and also styling pop up effect. | https://github.com/m1entus/MZFormSheetPresentationController
-SDWebImage | SDWebImage is a library which loading the image and also providing the cache. | https://github.com/rs/SDWebImage
-TPFloatRatingView | TPFloatingRatingView is a library which display the star rating with the star icons. | https://github.com/glenyi/TPFloatRatingView
-Icons8 | Icons8 is a website which provides images resources for icons. | https://icons8.com/
-Android Asset Studio | Android Asset Studio is a website which provides image resources for icons, it also allow users to change the color of the icons, as well as controlling its size and padding. | https://romannurik.github.io/AndroidAssetStudio/icons-generic.html
+The main objective of this template is to assist startups to build their mobile application faster and easier. 
 
 # How to start
 1. This project has implemented the GoogleMap SDK with cocoapod installed. If your Mac does not install Ruby and CocoaPods, please refer to Installation section. 
@@ -98,6 +84,123 @@ At the same time, you should integrate Web API into ```-(void) loadDataWithLatit
 
 ### DetailPageViewController.h & .m
 First of all, you have to remove all the dummy data before integrating Web API. The data displaying in 2 different parts which are ```UITableViewHeaderView``` and ```UITableViewCell```. You should integrate Web API into ```-(void)loadData``` with ```DEFAULT_TAKE``` to pull the number of data. You may set the TableHeaderView while pulling to refresh,  self.currentPage will reset back to 1. 
+
+# File Structure
+```
+RestuarantNearBy
+|---RestaurantNearBy
+|        |---AppDelegate.h
+|        |---AppDelegate.m
+|        |---Assets.xcassets
+|        |---LaunchScreen.storyboard
+|        |---Main.storyboard
+|        |---Info.plist
+|        |---Model
+|        |        |---CoordinateModel.h
+|        |        |---CoordinateModel.m
+|        |        |---RestaurantModel.h
+|        |        |---RestaurantModel.m
+|        |        |---MenuModel.h
+|        |        |---MenuModel.m
+|        |        |---AddressModel.h
+|        |        |---AddressModel.m
+|        |        |---UIModel
+|        |        |        |---AboutUIModel.h
+|        |        |        |---AboutUIModel.m
+|        |---Core
+|        |        |---AppConstants.h
+|        |        |---GeneralHelper.h
+|        |        |---GeneralHelper.m
+|        |---GUI
+|        |        |---BaseCollectionViewController.h
+|        |        |---BaseCollectionViewController.m
+|        |        |---BaseTableViewController.h
+|        |        |---BaseTableViewController.m
+|        |        |---BaseViewController.h
+|        |        |---BaseViewController.m
+|        |        |---AboutPage
+|        |        |        |---AboutPageViewController.h
+|        |        |        |---AboutPageViewController.m
+|        |        |        |---AboutHeaderView
+|        |        |        |        |---AboutHeaderView.h
+|        |        |        |        |---AboutHeaderView.m
+|        |        |        |        |---AboutHeaderView.xib
+|        |        |        |---AboutTableViewCells
+|        |        |        |        |---AboutTableViewCell.h
+|        |        |        |        |---AboutTableViewCell.m
+|        |        |---DetailsPage
+|        |        |        |---DetailPageViewController.h
+|        |        |        |---DetailPageViewController.m
+|        |        |        |---MoreDetailPageViewController.h
+|        |        |        |---MoreDetailPageViewController.m
+|        |        |        |---DetailPageTableViewCells
+|        |        |        |        |---MenuLeftSideTableViewCell.h
+|        |        |        |        |---MenuLeftSideTableViewCell.m
+|        |        |        |        |---DetailSectionTableViewCell.h
+|        |        |        |        |---DetailSectionTableViewCell.m
+|        |        |        |        |---MoreDetailAddressTableViewCell.h
+|        |        |        |        |---MoreDetailAddressTableViewCell.m
+|        |        |        |---DetailHeaderView
+|        |        |        |        |---DetailHeaderView.h
+|        |        |        |        |---DetailHeaderView.m
+|        |        |        |        |---DetailHeaderView.xib
+|        |        |        |        |---MoreDetailHeaderView.h
+|        |        |        |        |---MoreDetailHeaderView.m
+|        |        |        |        |---MoreDetailHeaderView.xib
+|        |        |---LandingPage
+|        |        |        |---LandingPageViewController.h
+|        |        |        |---LandingPageViewController.m
+|        |        |---MainPage
+|        |        |        |---MainPageViewController.h
+|        |        |        |---MainPageViewController.m
+|        |        |        |---MainPageContainerViewController.h
+|        |        |        |---MainPageContainerViewController.m
+|        |        |        |---ListPageViewController.h
+|        |        |        |---ListPageViewController.m
+|        |        |        |---MapPageViewController.h
+|        |        |        |---MapPageViewController.m
+|        |        |        |---MapDetailPageViewController.h
+|        |        |        |---MapDetailPageViewController.m
+|        |        |        |---ListCollectionViewCells
+|        |        |        |        |---ListCollectionViewCell.h
+|        |        |        |        |---ListCollectionViewCell.m
+|        |---Library
+|        |        |---EmptySegue.h
+|        |        |---EmptySegue.m
+|        |        |---MZFormSheetPresentationController
+|        |        |---LCBannerView
+|        |        |---TPFloatRatingView
+|        |        |---DACircularProgress
+|        |        |---MBProgressHUD
+|        |        |---MSPullToRefreshController
+|        |        |---MWPhotoBrowser
+|        |        |---SDWebImage
+|        |---main.m
+|        |---Resources
+|        |        |---Images
+|---Products
+|        |---RestaurantsNearBy.app
+|---Pods
+|---Frameworkds
+Pods
+```
+
+
+
+
+
+
+# Tools and Libraries used
+1. LCBannerView https://github.com/iTofu/LCBannerView
+2. MBProgressHUD https://github.com/jdg/MBProgressHUD
+3. MSPullToRefreshController https://github.com/bogardon/MSPullToRefreshController
+4. MWPhotoBrowser https://github.com/mwaterfall/MWPhotoBrowser
+5. DACircularProgress https://github.com/danielamitay/DACircularProgress
+6. MZFormSheetPresentationController https://github.com/m1entus/MZFormSheetPresentationController
+7. SDWebImage https://github.com/rs/SDWebImage
+8. TPFloatRatingView https://github.com/glenyi/TPFloatRatingView
+9. Icons8 https://icons8.com/
+10. Android Asset Studio https://romannurik.github.io/AndroidAssetStudio/icons-generic.html
 
 # Useful Links
 1. Appdrvn official website - http://www.appdrvn.com/ 
