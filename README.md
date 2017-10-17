@@ -185,26 +185,20 @@ RestuarantNearBy
 Pods
 ```
 
-
-
-
-
-
 # Tools and Libraries used
-1. LCBannerView https://github.com/iTofu/LCBannerView
-2. MBProgressHUD https://github.com/jdg/MBProgressHUD
-3. MSPullToRefreshController https://github.com/bogardon/MSPullToRefreshController
-4. MWPhotoBrowser https://github.com/mwaterfall/MWPhotoBrowser
-5. DACircularProgress https://github.com/danielamitay/DACircularProgress
-6. MZFormSheetPresentationController https://github.com/m1entus/MZFormSheetPresentationController
-7. SDWebImage https://github.com/rs/SDWebImage
-8. TPFloatRatingView https://github.com/glenyi/TPFloatRatingView
-9. Icons8 https://icons8.com/
-10. Android Asset Studio https://romannurik.github.io/AndroidAssetStudio/icons-generic.html
+1. LCBannerView - https://github.com/iTofu/LCBannerView
+2. MBProgressHUD - https://github.com/jdg/MBProgressHUD
+3. MSPullToRefreshController - https://github.com/bogardon/MSPullToRefreshController
+4. MWPhotoBrowser - https://github.com/mwaterfall/MWPhotoBrowser
+5. DACircularProgress - https://github.com/danielamitay/DACircularProgress
+6. MZFormSheetPresentationController - https://github.com/m1entus/MZFormSheetPresentationController
+7. SDWebImage - https://github.com/rs/SDWebImage
+8. TPFloatRatingView - https://github.com/glenyi/TPFloatRatingView
+9. Icons8 - https://icons8.com/
+10. Android Asset Studio - https://romannurik.github.io/AndroidAssetStudio/icons-generic.html
 
 # Useful Links
 1. Appdrvn official website - http://www.appdrvn.com/ 
 2. Appdrvn official facebook page - https://www.facebook.com/Appdrvn/ 
 3. Appdrvn email address - hello@appdrvn.com 
-
 
