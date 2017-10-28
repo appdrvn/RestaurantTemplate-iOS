@@ -94,6 +94,11 @@ First of all, you have to remove all the dummy data before integrating Web API. 
 ## File Structure
 ```
 RestuarantNearBy
+|---LICENSE.md
+|---README.md
+|---Podfile
+|---Podfile.lock
+|---Pods
 |---RestaurantNearBy
 |        |---AppDelegate.h
 |        |---AppDelegate.m
@@ -184,11 +189,6 @@ RestuarantNearBy
 |        |---main.m
 |        |---Resources
 |        |        |---Images
-|---Products
-|        |---RestaurantsNearBy.app
-|---Pods
-|---Frameworkds
-Pods
 ```
 
 ## Tools and Libraries used
