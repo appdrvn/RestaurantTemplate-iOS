@@ -100,95 +100,95 @@ RestuarantNearBy
 |---Podfile.lock
 |---Pods
 |---RestaurantNearBy
-|        |---AppDelegate.h
-|        |---AppDelegate.m
-|        |---Assets.xcassets
-|        |---LaunchScreen.storyboard
-|        |---Main.storyboard
-|        |---Info.plist
-|        |---Model
-|        |        |---CoordinateModel.h
-|        |        |---CoordinateModel.m
-|        |        |---RestaurantModel.h
-|        |        |---RestaurantModel.m
-|        |        |---MenuModel.h
-|        |        |---MenuModel.m
-|        |        |---AddressModel.h
-|        |        |---AddressModel.m
-|        |        |---UIModel
-|        |        |        |---AboutUIModel.h
-|        |        |        |---AboutUIModel.m
-|        |---Core
-|        |        |---AppConstants.h
-|        |        |---GeneralHelper.h
-|        |        |---GeneralHelper.m
-|        |---GUI
-|        |        |---BaseCollectionViewController.h
-|        |        |---BaseCollectionViewController.m
-|        |        |---BaseTableViewController.h
-|        |        |---BaseTableViewController.m
-|        |        |---BaseViewController.h
-|        |        |---BaseViewController.m
-|        |        |---AboutPage
-|        |        |        |---AboutPageViewController.h
-|        |        |        |---AboutPageViewController.m
-|        |        |        |---AboutHeaderView
-|        |        |        |        |---AboutHeaderView.h
-|        |        |        |        |---AboutHeaderView.m
-|        |        |        |        |---AboutHeaderView.xib
-|        |        |        |---AboutTableViewCells
-|        |        |        |        |---AboutTableViewCell.h
-|        |        |        |        |---AboutTableViewCell.m
-|        |        |---DetailsPage
-|        |        |        |---DetailPageViewController.h
-|        |        |        |---DetailPageViewController.m
-|        |        |        |---MoreDetailPageViewController.h
-|        |        |        |---MoreDetailPageViewController.m
-|        |        |        |---DetailPageTableViewCells
-|        |        |        |        |---MenuLeftSideTableViewCell.h
-|        |        |        |        |---MenuLeftSideTableViewCell.m
-|        |        |        |        |---DetailSectionTableViewCell.h
-|        |        |        |        |---DetailSectionTableViewCell.m
-|        |        |        |        |---MoreDetailAddressTableViewCell.h
-|        |        |        |        |---MoreDetailAddressTableViewCell.m
-|        |        |        |---DetailHeaderView
-|        |        |        |        |---DetailHeaderView.h
-|        |        |        |        |---DetailHeaderView.m
-|        |        |        |        |---DetailHeaderView.xib
-|        |        |        |        |---MoreDetailHeaderView.h
-|        |        |        |        |---MoreDetailHeaderView.m
-|        |        |        |        |---MoreDetailHeaderView.xib
-|        |        |---LandingPage
-|        |        |        |---LandingPageViewController.h
-|        |        |        |---LandingPageViewController.m
-|        |        |---MainPage
-|        |        |        |---MainPageViewController.h
-|        |        |        |---MainPageViewController.m
-|        |        |        |---MainPageContainerViewController.h
-|        |        |        |---MainPageContainerViewController.m
-|        |        |        |---ListPageViewController.h
-|        |        |        |---ListPageViewController.m
-|        |        |        |---MapPageViewController.h
-|        |        |        |---MapPageViewController.m
-|        |        |        |---MapDetailPageViewController.h
-|        |        |        |---MapDetailPageViewController.m
-|        |        |        |---ListCollectionViewCells
-|        |        |        |        |---ListCollectionViewCell.h
-|        |        |        |        |---ListCollectionViewCell.m
-|        |---Library
-|        |        |---EmptySegue.h
-|        |        |---EmptySegue.m
-|        |        |---MZFormSheetPresentationController
-|        |        |---LCBannerView
-|        |        |---TPFloatRatingView
-|        |        |---DACircularProgress
-|        |        |---MBProgressHUD
-|        |        |---MSPullToRefreshController
-|        |        |---MWPhotoBrowser
-|        |        |---SDWebImage
-|        |---main.m
-|        |---Resources
-|        |        |---Images
+| |---AppDelegate.h
+| |---AppDelegate.m
+| |---Assets.xcassets
+| |---LaunchScreen.storyboard
+| |---Main.storyboard
+| |---Info.plist
+| |---Model
+| | |---CoordinateModel.h
+| | |---CoordinateModel.m
+| | |---RestaurantModel.h
+| | |---RestaurantModel.m
+| | |---MenuModel.h
+| | |---MenuModel.m
+| | |---AddressModel.h
+| | |---AddressModel.m
+| | |---UIModel
+| | | |---AboutUIModel.h
+| | | |---AboutUIModel.m
+| |---Core
+| | |---AppConstants.h
+| | |---GeneralHelper.h
+| | |---GeneralHelper.m
+| |---GUI
+| | |---BaseCollectionViewController.h
+| | |---BaseCollectionViewController.m
+| | |---BaseTableViewController.h
+| | |---BaseTableViewController.m
+| | |---BaseViewController.h
+| | |---BaseViewController.m
+| | |---AboutPage
+| | | |---AboutPageViewController.h
+| | | |---AboutPageViewController.m
+| | | |---AboutHeaderView
+| | | | |---AboutHeaderView.h
+| | | | |---AboutHeaderView.m
+| | | | |---AboutHeaderView.xib
+| | | |---AboutTableViewCells
+| | | | |---AboutTableViewCell.h
+| | | | |---AboutTableViewCell.m
+| | |---DetailsPage
+| | | |---DetailPageViewController.h
+| | | |---DetailPageViewController.m
+| | | |---MoreDetailPageViewController.h
+| | | |---MoreDetailPageViewController.m
+| | | |---DetailPageTableViewCells
+| | | | |---MenuLeftSideTableViewCell.h
+| | | | |---MenuLeftSideTableViewCell.m
+| | | | |---DetailSectionTableViewCell.h
+| | | | |---DetailSectionTableViewCell.m
+| | | | |---MoreDetailAddressTableViewCell.h
+| | | | |---MoreDetailAddressTableViewCell.m
+| | | |---DetailHeaderView
+| | | | |---DetailHeaderView.h
+| | | | |---DetailHeaderView.m
+| | | | |---DetailHeaderView.xib
+| | | | |---MoreDetailHeaderView.h
+| | | | |---MoreDetailHeaderView.m
+| | | | |---MoreDetailHeaderView.xib
+| | |---LandingPage
+| | | |---LandingPageViewController.h
+| | | |---LandingPageViewController.m
+| | |---MainPage
+| | | |---MainPageViewController.h
+| | | |---MainPageViewController.m
+| | | |---MainPageContainerViewController.h
+| | | |---MainPageContainerViewController.m
+| | | |---ListPageViewController.h
+| | | |---ListPageViewController.m
+| | | |---MapPageViewController.h
+| | | |---MapPageViewController.m
+| | | |---MapDetailPageViewController.h
+| | | |---MapDetailPageViewController.m
+| | | |---ListCollectionViewCells
+| | | | |---ListCollectionViewCell.h
+| | | | |---ListCollectionViewCell.m
+| |---Library
+| | |---EmptySegue.h
+| | |---EmptySegue.m
+| | |---MZFormSheetPresentationController
+| | |---LCBannerView
+| | |---TPFloatRatingView
+| | |---DACircularProgress
+| | |---MBProgressHUD
+| | |---MSPullToRefreshController
+| | |---MWPhotoBrowser
+| | |---SDWebImage
+| |---main.m
+| |---Resources
+| | |---Images
 ```
 
 ## Tools and Libraries used
@@ -200,8 +200,9 @@ RestuarantNearBy
 6. MZFormSheetPresentationController - https://github.com/m1entus/MZFormSheetPresentationController
 7. SDWebImage - https://github.com/rs/SDWebImage
 8. TPFloatRatingView - https://github.com/glenyi/TPFloatRatingView
-9. Icons8 - https://icons8.com/
-10. Android Asset Studio - https://romannurik.github.io/AndroidAssetStudio/icons-generic.html
+9. Unsplash - https://unsplash.com/
+10. Icons8 - https://icons8.com/
+11. Android Asset Studio - https://romannurik.github.io/AndroidAssetStudio/icons-generic.html
 
 ## Useful Links
 1. Appdrvn official website - http://www.appdrvn.com/ 
