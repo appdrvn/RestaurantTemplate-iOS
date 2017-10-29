@@ -1,5 +1,5 @@
 ## [Restaurant Template iOS](http://www.appdrvn.com/restaurant-template-ios)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Restaurant Template iOS](https://appdrvn.blob.core.windows.net/a1b84c0f-dac1-4b57-b657-2790410fdc24/0000022_restaurant-template-ios.jpeg "Restaurant Template iOS") 
+![Restaurant Template iOS](https://appdrvn.blob.core.windows.net/a1b84c0f-dac1-4b57-b657-2790410fdc24/0000026_restaurant-template-ios.jpeg "Restaurant Template iOS") 
 
 ## Introduction
 Restaurant Directory App Template is based on a restaurant directory app. The app consists of list view, and also map view. List view display the restaurant list in grid format, while map view has the concept of showing the restaurants in an area based on the center of the map. Other than the list and map view, this template consists of details page as well, displaying the restaurant details, and also the menu that are available in this restaurant.
